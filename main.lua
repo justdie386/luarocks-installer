@@ -1,4 +1,4 @@
-local wrapper = require("./http.lua")
+local download = require("./http.lua")
 
 local files = {
   lua = {
@@ -21,4 +21,4 @@ local files = {
   }
 }
 
-wrapper.begin(files)
+download.begin(files)
