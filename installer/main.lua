@@ -1,3 +1,4 @@
+--THIS IS A PROTOTYPE, MEANT TO BE AN EXAMPLE, I WILL EDIT THE THINGS TO MAKE IT ACTUALLY INSTALL LUA PROPERLY AND SET IT UP WITH LUAROCKS, AND THE PATH/CPATH
 package.path = "./?.lua;"..package.path
 local installer = require("install")
 local AppData = os.getenv("APPDATA")
@@ -6,18 +7,18 @@ local files = {
     name = "lua_exec.zip",
     url = "https://pilotfiber.dl.sourceforge.net/project/luabinaries/5.4.2/Tools%20Executables/lua-5.4.2_Win64_bin.zip",
     unzip = true,
-    files = {
-      { "lua54.exe", AppData..[[\lua\bin2\lua54.exe]] },
-      { "lua54.dll", AppData..[[\lua\bin2\lua54.dll]] },
+    files = { --files that will be unzipped from the lua_exec.zip
+      { "lua54.exe", AppData..[[\lua\bin\lua54.exe]] },
+      { "lua54.dll", AppData..[[\lua\bin\lua54.dll]] },
     },
-    directories = {
+    directories = { --directories that will be created, for your files to be placed
       AppData..[[\lua]],
-      AppData..[[\lua\bin2]]
+      AppData..[[\lua\bin]]
     },
-    path = {
+    path = { --path to add to the env variable, so that for example lua54.exe would be added to the path and be able to be called from any directories
       [[C:\Users\justi\AppData\lua\bin]]
     },
-    registry = {
+    registry = { --creates new keys in the registry, such as the LUAROCKS_CONFIG which would point to your config.lua in question
       { "LUA_LIBDIR",  AppData..[[\lua\bin]] }
     },
   },
