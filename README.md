@@ -21,4 +21,4 @@ Why? because i haven't posted it as an actual rock on the luarocks website just 
 How to use
 
 For now, i haven't make any build steps to bundle it into an executable, which could be done with luastatic, but I'm planning on doing it when i get general idea of which GUI library i'll be using, and how i'll do everything else
-But if you wanna test it, you can install the dependencies above, and run the installer/src/main.lua (from the installer or src folder)
+But if you wanna test it, you can install the dependencies above, and run the installer/main.lua
