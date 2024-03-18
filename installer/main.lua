@@ -1,4 +1,4 @@
-package.path = "./src/?.lua;"..package.path
+package.path = "./?.lua;"..package.path
 local installer = require("install")
 local AppData = os.getenv("APPDATA")
 local files = {
