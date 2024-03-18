@@ -39,7 +39,6 @@ local files = {
     },
     path = {
       AppData..[[\lua\bin]],
-      
     },
     registry = {
       { "LUA_INCDIR",  AppData..[[\lua\inc]] }
