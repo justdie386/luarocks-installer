@@ -4,7 +4,7 @@ source = {
    url = "..."
 }
 description = {
-   summary = "A luarocks and lua installer",
+   summary = "very simple bindings to the win32 registry API",
    detailed = [[
 
    ]],
@@ -12,18 +12,12 @@ description = {
 }
 dependencies = {
    "lua 5.1",
-   "luasocket",
-   "luazip",
-   "lanes",
-   "luasec"
 }
 build = {
    type = "builtin",
    modules = {
-      files = {"install.lua"},
       registry = {
          source = {"registry.c"},
          libraries = {"user32"}
-      },
    }
 }
