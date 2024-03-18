@@ -1,3 +1,18 @@
-A work in progress luarocks installer
+A work in progress luarocks installer (CLI only for now)
 
-Uses luvit because its builtin libraries are a gift from the gods, and using the luvi tool to package the whole thing into an executable makes it ridiculously easy to package, because i don't need to deal with external libraries
+Dependencies
+
+- lua5.1
+- luazip
+- luasocket
+- luafilesystem
+- luasec
+- registry
+
+How to acquire the registry library
+
+```
+cd registry
+luarocks build
+```
+Why? because i haven't posted it as an actual rock on the luarocks website just yet
