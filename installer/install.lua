@@ -89,6 +89,8 @@ end
 --this is a bit of a funky method, and it really doesn't work out that much
 --but i spent too long writing it to just delete it, like come on man...
 
+--the main goal of this function was to get the number of steps, to then dynamically
+--calculate the progress bar, and so on, but i'll need to re-think about the logic
 --[[function utils:initProgress(everything)
     for k,v in pairs(everything) do
         if v.files then
