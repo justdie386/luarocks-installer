@@ -1,3 +1,5 @@
+NEW INSTALLER at https://github.com/justdie386/theinstaller
+
 A work in progress luarocks installer (CLI only for now)
 
 Dependencies
